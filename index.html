@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
 <head>
+  <!--
+    This isn't the worst website in the world; this is just a tribute. 
+
+    I'd love to get your help improving this site. Please send a note to peat@deadledger.org
+    and we'll chat about what's possible!
+  -->
   <title>The Dead Ledger Society</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK5QX90XYW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-XK5QX90XYW');
 </script>
   <meta charset="UTF-8">
@@ -18,29 +23,60 @@
 
     body {
       font-family: 'Cinzel', serif;
-      font-size: 3em;
       padding: 0;
       background-color: #eee;
     }
     .container {
+      font-size: 4em;
       border: 2px solid #000;
-      margin: 2em auto 1em auto;
-      width: 5em;
+      margin: 1em auto 1em auto;
+      width: 4em;
       padding: 0.5em;
       text-align: center;
       background-color: #fff;
       box-shadow: 0px 0px 15px #bbb; 
     }
-    .contact {
+    .update {
+      width: 800px;
+      padding: 0;
+      margin: 1em auto;
+    }
+    .update iframe {
+      padding: 1em;
+    }
+    .footer, .subscribe {
       font-family: 'EB Garamond', serif;
       text-align: center;
       font-size: 18pt;
+      width: 600px;
+      margin: 1em auto;
       color: #666;
+      letter-spacing: 1px;
     }
-    .contact a {
+    .footer {
+      padding-top: 1em;
+      font-size: 12pt;
+      width: 600px;
+    }
+    .footer a {
       text-decoration: none;
       color: inherit;
       letter-spacing: 1px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .subscribe {
+      margin-top: 2em;
+      margin-bottom: 3em;
+
+      font-size: 14pt;
+    }
+    .subscribe iframe {
+      padding-top: 1em;
+    }
+    .copyright {
+      margin-top: 1em;
     }
   </style>
 </head>
@@ -50,6 +86,25 @@
     <div class="ledger">Ledger</div>
     <div class="society">Society</div>
   </div>
-  <div class="contact"><a href="mailto:hello@deadledger.org">hello@deadledger.org</a></div>
+  <div class="update">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/1dGc-Y2E97k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="footer">
+    <div class="subscribe">
+      Join the <em>Dead Ledger Letter</em> for announcements<br/> and invitations to Society events.<br/>
+    <iframe src="https://embeds.beehiiv.com/de05b238-86ea-4495-8fc4-22b659d7df55?slim=true" data-test-id="beehiiv-embed" height="52" width="300" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+    </div>
+    <div class="contact">
+      <a class="youtube" href="https://www.youtube.com/channel/UCNF_e6zMV-3xDU1UpRkgw1w">YouTube</a> ~
+      <a class="facebook" href="https://www.facebook.com/deadledgersociety">Facebook</a> ~
+      <a class="twitter" href="https://twitter.com/deadledgers">Twitter</a> ~ 
+      <a class="linkedin" href="https://www.linkedin.com/company/deadledger">LinkedIn</a>
+      <br/>
+      <a class="email" href="mailto:hello@deadledger.org">hello@deadledger.org</a>
+    </div>
+    <div class="copyright">
+      Copyright &copy; 2023, Dead Ledger Society<br/> All rights reserved.
+    </div>
+  </div>
 </body>
 </html>
