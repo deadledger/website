@@ -1,108 +1,45 @@
 <!doctype html>
 <html>
 <head>
-  <!--
-    This isn't the worst website in the world; this is just a tribute. 
-
-    I'd love to get your help improving this site. Please send a note to peat@deadledger.org
-    and we'll chat about what's possible!
-  -->
-  <title>The Dead Ledger Society</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK5QX90XYW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XK5QX90XYW');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Dead Ledger Society</title>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
-    body {
-      font-family: 'Cinzel', serif;
-      padding: 0;
-      background-color: #eee;
-    }
-    .logo {
-      font-size: 4em;
-      border: 2px solid #000;
-      margin: 1em auto 1em auto;
-      width: 300px;
-      padding: 0.5em;
-      text-align: center;
-      background-color: #fff;
-      box-shadow: 0px 0px 15px #bbb; 
-    }
-    .yt {
-      margin: 1em auto;
-      text-align: center;
-      width: 300px;
-
-    }
-    .yt img {
-      width: 300px;
-    }
-    .footer, .subscribe {
-      font-family: 'EB Garamond', serif;
-      text-align: center;
-      font-size: 18pt;
-      width: 300px;
-      margin: 1em auto;
-      color: #666;
-      letter-spacing: 1px;
-    }
-    .footer {
-      padding-top: 1em;
-      font-size: 12pt;
-    }
-    .footer a {
-      text-decoration: none;
-      color: inherit;
-      letter-spacing: 1px;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    .subscribe {
-      margin-top: 2em;
-      margin-bottom: 3em;
-      font-size: 14pt;
-    }
-    .subscribe iframe {
-      padding-top: 1em;
-    }
-    .copyright {
-      margin-top: 1em;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');    
   </style>
+
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+  <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="logo">
-    <div class="dead">Dead</div>
-    <div class="ledger">Ledger</div>
-    <div class="society">Society</div>
+<body class="bg-zinc-200 p-3 font-garamond">
+  <div class="container max-w-lg mx-auto p-5 rounded-md bg-white border-1 border-black shadow-lg">
+
+    <img src="dl-seal-bordered.svg" class="mb-20">
+
+    <div class="text-center my-20">
+      <a class="rounded-md bg-blue-500 text-white px-10 py-3" href="https://donate.stripe.com/00gfZkfsV6GTaju5kk">Donate to Wipe Out Student Debt</a>
+    </div>
+
+    <div class="aspect-w-16 aspect-h-9 my-20 mx-5 border shadow-lg">
+      <iframe src="https://www.youtube.com/embed/1dGc-Y2E97k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="my-20">
+      <iframe src="https://embeds.beehiiv.com/de05b238-86ea-4495-8fc4-22b659d7df55?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="height: 55px" class="mx-auto my-5"></iframe>
+    </div>
+
+    <div class="italic text-center">
+      The Dead Ledger Society is a registered <a class="text-blue-600 hover:underline" href="https://egov.sos.state.or.us/br/pkg_web_name_srch_inq.show_detl?p_be_rsn=2415516&p_srce=BR_INQ&p_print=FALSE">Oregon non-profit public benefit organization</a>, pending 501(c)(3) charity status. 
+    </div>
   </div>
-  <div class="yt">
-    <a href="https://youtu.be/1dGc-Y2E97k"><img src="yt.png"></a>
-  </div>
-  <div class="footer">
-    <div class="subscribe">
-      Join the <em>Dead Ledger Letter</em> for updates and invitations to Society events.<br/>
-    <iframe src="https://embeds.beehiiv.com/de05b238-86ea-4495-8fc4-22b659d7df55?slim=true" data-test-id="beehiiv-embed" height="52" width="300" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-    </div>
-    <div class="contact">
-      <a class="youtube" href="https://www.youtube.com/channel/UCNF_e6zMV-3xDU1UpRkgw1w">YouTube</a><br/>
-      <a class="facebook" href="https://www.facebook.com/deadledgersociety">Facebook</a><br/>
-      <a class="twitter" href="https://twitter.com/deadledgers">Twitter</a><br/>
-      <a class="linkedin" href="https://www.linkedin.com/company/deadledger">LinkedIn</a><br/><br/>
-      <a class="email" href="mailto:hello@deadledger.org">hello@deadledger.org</a>
-    </div>
-    <div class="copyright">
-      Copyright &copy; 2023, Dead Ledger Society<br/> All rights reserved.
-    </div>
+  <div class="container max-w-lg mx-auto mt-5 text-center font-cinzel text-zinc-500">
+    Copyright &copy; 2023, Dead Ledger Society
   </div>
 </body>
 </html>
